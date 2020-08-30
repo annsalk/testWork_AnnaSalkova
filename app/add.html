@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test work by Ann Salkova</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/libs.min.css">
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="content">
+            <header class="header">
+                <div class="container">
+                    <div class="header__inner">
+                        <div class="header__logo">
+                            <a href="index.html" class="header__logo-link">
+                                LOGO
+                            </a>
+                        </div>
+                        <div class="header__box">
+                            <a class="header__btn header__btn-login  header_btn-login--off" data-fancybox
+                                data-src="#modal" href="javascript:;">Войти</a>
+                            <a class="header__btn header__btn-register header_btn-login--off" data-fancybox
+                                data-src="#modal__reg" href="javascript:;">Зарегистрироваться</a>
+                            <a class="header__btn header__btn-add" href="add.html">Добавить объявление</a>
+                            <a class="header__btn-link header__btn-my__announcements" href="announcements.html">Мои
+                                объявления</a>
+                            <a class="header__btn-link header__btn-personal_area" href="personal.html">Личный
+                                кабинет</a>
+                            <a class="header__btn header__btn-logout" href="#">Выйти</a>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <section class="add">
+                <div class="container">
+                    <div class="change__wrapper add__wrapper">
+                        <div class="change__wrapper-title add__wrapper-title">
+                            Добавить объявление
+                        </div>
+                        <div class="change__wrapper-form add__wrapper-form">
+                            <form class="form" id="myNew" role="form">
+                                <label for="inputHeading">
+                                    Заголовок
+                                    <input type="text" name="heading" id="inputHeading" placeholder="" required>
+                                </label>
+                                <label for="selectCategory">
+                                    Категория
+                                    <select name="category" id="selectCategory" required>
+                                        <option> </option>
+                                        <option>Недвижимость</option>
+                                        <option>Транспорт</option>
+                                        <option>Личные вещи</option>
+                                        <option>Хобби и отдых</option>
+                                        <option>Услуги</option>
+                                        <option>Бытовая техника</option>
+                                    </select>
+                                </label>
+                                <label for="selectAbout">
+                                    Описание
+                                    <textarea name="about" id="selectAbout" cols="30" rows="10">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde ratione labore soluta facilis reiciendis cum cupiditate molestiae? Iure fugit necessitatibus architecto blanditiis sit est autem, consequuntur eos? Nostrum, inventore possimus.
+                                    </textarea>
+                                </label>
+                                <label for="inputCity">Город
+                                    <select  name="city" id="selectCity" required>
+                                        <option> </option>
+                                        <option>Мокондо</option>
+                                        <option>Москва</option>
+                                        <option>Санкт-Петербург</option>
+                                        <option>Новосибирск</option>
+                                        <option>Екатеринбург</option>
+                                        <option>Омск</option>
+                                        <option>Томск</option>
+                                        <option>Красноярск</option>
+                                        <option>Хабаровск</option>
+                                    </select>
+                                </label>
+                                
+                                <label for="inputPrice">
+                                    Цена <br>
+                                    <input name="price" id="inputPrice" class="input__price add__input-price" type="number" min=0 step=1 pattern="[0-9]{10}">руб.
+                                </label>
+
+                                <div class="box">
+                                    <div class="box__name">Фотография</div>
+                                   
+                                    <input type="file" name="file-1[]" id="file-1" class="inputfile inputfile-1"
+                                        data-multiple-caption="{count} files selected" multiple />
+                                
+                                
+
+                                        <label for="file-1">
+                                        <span>Обзор&hellip;</span></label>
+                           
+                    
+
+                                    <div class="box__info">Вы можете загрузить фотографию в формате jpeg, jpg, png.
+                                        Весом не более 10Мб.</div>
+                                </div>
+
+                                <button class="add__change" type="submit">Добавить</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+        <footer class="footer">
+            <div class="container">
+                <p class="footer__text">
+                    2020 Test work by Anna Salkova
+                </p>
+            </div>
+        </footer>
+    </div>
+
+    <div id="modal">
+        <div class="login__wrapper">
+            <div class="login__title">
+                Авторизация
+            </div>
+            <form class="form" id="myForm" role="form">
+                <label class="login__label-mail" for="inputEmail">
+                    <h4>E-mail</h4>
+                    <input class="form-control" type="email" name="email" id="inputEmail" placeholder="Введите E-mail" required>
+                </label>
+                <label class="login__label-password">
+                    <h4>Пароль</h4>
+                    <input  class="form-control" type="password" name="password" id="inputPassword" placeholder="Введите пароль" required>
+                </label>
+                <button class="btn btn-default" type="submit">Войти</button>
+            </form>
+        </div>
+    </div>
+
+    <div id="modal__reg">
+        <div class="login__wrapper">
+            <div class="login__title">
+                Регистрация
+            </div>
+            <form class="form" id="myFormReg" role="form">
+                <label class="login__label-mail" for="inputEmail">
+                    <h4>E-mail</h4>
+                    <input class="form-control" type="email" name="email" id="inputEmail" placeholder="Введите E-mail" required>
+                </label>
+                <label class="login__label-password">
+                    <h4>Пароль</h4>
+                    <input  class="form-control" type="password" name="password" id="inputPassword" placeholder="Введите пароль" required>
+                </label>
+                <button class="btn btn-default" type="submit">Войти</button>
+            </form>
+        </div>
+    </div>
+
+    <div id="modal__gallery">
+        <div class="gallery__wrapper">
+            <div class="gallery__wrapper-top">
+                <div class="gallery__wrapper-name">
+                    Фотография 1
+                </div>
+                <div class="gallery__wrapper-box">
+                    <button class="slick-btn slick-prev" type="submit"></button>
+                    <button class="slick-btn slick-next" type="submit"></button>
+                </div>
+            </div>
+            <div class="modal-work__images">
+                <div data-slider="modal__slider">
+                    <div class="slide">
+                        <img class="modal-work__images-photo" src="images/item.jpg" alt="">
+                    </div>
+                    <div class="slide">
+                        <img class="modal-work__images-photo" src="images/item1.jpg" alt="">
+                    </div>
+                    <div class="slide">
+                        <img class="modal-work__images-photo" src="images/item2.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal__change">
+        <div class="change__wrapper">
+            <div class="change__wrapper-title">
+                Изменить объявление
+            </div>
+            <div class="change__wrapper-form">
+                <form>
+                    <label>
+                        Заголовок
+                        <input type="text" placeholder="" required>
+                    </label>
+                    <label>
+                        Категория
+                        <select>
+                            <option selected>Недвижимость</option>
+                            <option>Транспорт</option>
+                            <option>Личные вещи</option>
+                            <option>Хобби и отдых</option>
+                            <option>Услуги</option>
+                            <option>Бытовая техника</option>
+                        </select>
+                    </label>
+                    <label>
+                        Описание
+                        <textarea name="" id="" cols="30" rows="10">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde ratione labore soluta facilis reiciendis cum cupiditate molestiae? Iure fugit necessitatibus architecto blanditiis sit est autem, consequuntur eos? Nostrum, inventore possimus.
+                        </textarea>
+                    </label>
+                    <label>
+                        Город
+                        <select>
+                            <option>Москва</option>
+                            <option>Санкт-Петербург</option>
+                            <option>Новосибирск</option>
+                            <option>Екатеринбург</option>
+                            <option>Омск</option>
+                            <option>Томск</option>
+                            <option>Красноярск</option>
+                            <option>Хабаровск</option>
+                        </select>
+                    </label>
+                    <label>
+                        Цена
+                        <input class="input__price" type="text" pattern="[0-9]{10}">руб.
+                    </label>
+                    <div>Фотографии</div>
+                    <button class="save__change" type="submit">Сохранить изменения</button>
+                </form>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="js/libs.min.js"></script>
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>

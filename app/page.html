@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test work by Ann Salkova</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/libs.min.css">
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="content">
+            <header class="header">
+                <div class="container">
+                    <div class="header__inner">
+                        <div class="header__logo">
+                            <a href="index.html" class="header__logo-link">
+                                LOGO
+                            </a>
+                        </div>
+                        <div class="header__box">
+                            <a class="header__btn header__btn-login" data-fancybox data-src="#modal"
+                                href="javascript:;">Войти</a>
+                            <a class="header__btn header__btn-register" data-fancybox data-src="#modal__reg"
+                                href="javascript:;">Зарегистрироваться</a>
+                            <a class="header__btn header__btn-add header_btn-login--off" href="add.html">Добавить объявление</a>
+                            <a class="header__btn-link header__btn-my__announcements header_btn-login--off" href="announcements.html">Мои объявления</a>
+                            <a class="header__btn-link header__btn-personal_area header_btn-login--off" href="personal.html">Личный кабинет</a>
+                            <a class="header__btn header__btn-logout header_btn-login--off" href="#">Выйти</a>
+                        </div>
+                    </div>
+                </div>
+            </header>
+        </div>
+        
+        <footer class="footer">
+            <div class="container">
+                <p class="footer__text">
+                    2020 Test work by Anna Salkova
+                </p>
+            </div>
+
+        </footer>
+    </div>
+
+    <div id="modal">
+        <div class="login__wrapper">
+            <div class="login__title">
+                Авторизация
+            </div>
+            <form>
+                <label class="login__label-mail">
+                    E-mail
+                    <input type="text" placeholder="Введите E-mail" required>
+                </label>
+                <label class="login__label-password">
+                    Пароль
+                    <input type="text" placeholder="Введите пароль" required>
+                </label>
+                <button type="submit">Войти</button>
+            </form>
+        </div>
+    </div>
+
+    <div id="modal__reg">
+        <div class="login__wrapper">
+            <div class="login__title">
+                Регистрация
+            </div>
+            <form>
+                <label class="login__label-mail">
+                    E-mail
+                    <input type="text" placeholder="Введите E-mail" required>
+                </label>
+                <label class="login__label-password">
+                    Пароль
+                    <input type="text" placeholder="Введите пароль" required>
+                </label>
+                <button type="submit">Зарегистрироваться</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="js/libs.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

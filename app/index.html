@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test work by Ann Salkova</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/libs.min.css">
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="content">
+            <header class="header">
+                <div class="container">
+                    <div class="header__inner">
+                        <div class="header__logo">
+                            <a href="index.html" class="header__logo-link">
+                                LOGO
+                            </a>
+                        </div>
+                        <div class="header__box">
+                            <a class="header__btn header__btn-login" data-fancybox data-src="#modal"
+                                href="javascript:;">Войти</a>
+                            <a class="header__btn header__btn-register" data-fancybox data-src="#modal__reg"
+                                href="javascript:;">Зарегистрироваться</a>
+                            <a class="header__btn header__btn-add header_btn-login--off" href="add.html">Добавить объявление</a>
+                            <a class="header__btn-link header__btn-my__announcements header_btn-login--off" href="announcements.html">Мои объявления</a>
+                            <a class="header__btn-link header__btn-personal_area header_btn-login--off" href="personal.html">Личный кабинет</a>
+                            <a class="header__btn header__btn-logout header_btn-login--off" href="#">Выйти</a>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <section class="search__product">
+                <div class="container">
+                    <div class="search__product-inner">
+                        <form>
+                            <label>
+                                <select>
+                                    <option selected>Категория</option>
+                                    <option>Недвижимость</option>
+                                    <option>Транспорт</option>
+                                    <option>Личные вещи</option>
+                                    <option>Хобби и отдых</option>
+                                    <option>Услуги</option>
+                                    <option>Бытовая техника</option>
+                                </select>
+                                <select>
+                                    <option selected>Город</option>
+                                    <option>Москва</option>
+                                    <option>Санкт-Петербург</option>
+                                    <option>Новосибирск</option>
+                                    <option>Екатеринбург</option>
+                                    <option>Омск</option>
+                                    <option>Томск</option>
+                                    <option>Красноярск</option>
+                                    <option>Хабаровск</option>
+                                </select>
+                                <input type="text" placeholder="Поиск по объявлениям" required>
+                                <button type="submit">
+                                    Поиск
+                                </button>
+                            </label>
+                            
+                        </form>
+                    </div>
+                    
+                </div>
+            </section>
+            <section class="products">
+                <div class="container">
+                    <div class="show__items show__items-ind">
+                        <div class="show__items-text">Показать по:</div>
+                        <select>
+                            <option>20</option>
+                            <option>40</option>
+                            <option>120</option>
+                        </select>
+                    </div>
+                    <div class="title products__title">
+                        Актуальные объявления
+                    </div>
+                    <div class="products__inner">
+                        <div class="products__item">
+                            <a class="products__item-img" href="product__one.html"></a>
+                            <div class="products__info-box">
+                                <a class="products__info-title" href="product__one.html">Заголовок объявления</a>
+                                <div class="products__info-price">Цена: 1000 руб</div>
+                                <time datetime="2020-08-07T22:34">7 августа 22:34</time>
+                            </div>
+                        </div>
+                        <div class="products__item">
+                            <a class="products__item-img" href="product__one.html"></a>
+                            <div class="products__info-box">
+                                <a class="products__info-title" href="product__one.html">Заголовок объявления</a>
+                                <div class="products__info-price">Цена: 1000 руб</div>
+                                <time datetime="2020-08-07T22:34">7 августа 22:34</time>
+                            </div>
+                        </div>
+                        <div class="products__item">
+                            <a class="products__item-img" href="product__one.html"></a>
+                            <div class="products__info-box">
+                                <a class="products__info-title" href="product__one.html">Заголовок объявления</a>
+                                <div class="products__info-price">Цена: 1000 руб</div>
+                                <time datetime="2020-08-07T22:34">7 августа 22:34</time>
+                            </div>
+                        </div>
+                        <div class="products__item">
+                            <a class="products__item-img" href="product__one.html"></a>
+                            <div class="products__info-box">
+                                <a class="products__info-title" href="product__one.html">Заголовок объявления</a>
+                                <div class="products__info-price">Цена: 1000 руб</div>
+                                <time datetime="2020-08-07T22:34">7 августа 22:34</time>
+                            </div>
+                        </div>
+                        <div class="products__item">
+                            <a class="products__item-img" href="product__one.html"></a>
+                            <div class="products__info-box">
+                                <a class="products__info-title" href="product__one.html">Заголовок объявления</a>
+                                <div class="products__info-price">Цена: 1000 руб</div>
+                                <time datetime="2020-08-07T22:34">7 августа 22:34</time>
+                            </div>
+                        </div>
+                        <div class="products__item">
+                            <a class="products__item-img" href="product__one.html"></a>
+                            <div class="products__info-box">
+                                <a class="products__info-title" href="product__one.html">Заголовок объявления</a>
+                                <div class="products__info-price">Цена: 1000 руб</div>
+                                <time datetime="2020-08-07T22:34">7 августа 22:34</time>
+                            </div>
+                        </div>
+                        <div class="products__item">
+                            <a class="products__item-img" href="product__one.html"></a>
+                            <div class="products__info-box">
+                                <a class="products__info-title" href="product__one.html">Заголовок объявления</a>
+                                <div class="products__info-price">Цена: 1000 руб</div>
+                                <time datetime="2020-08-07T22:34">7 августа 22:34</time>
+                            </div>
+                        </div>
+                        <div class="products__item">
+                            <a class="products__item-img" href="product__one.html"></a>
+                            <div class="products__info-box">
+                                <a class="products__info-title" href="product__one.html">Заголовок объявления</a>
+                                <div class="products__info-price">Цена: 1000 руб</div>
+                                <time datetime="2020-08-07T22:34">7 августа 22:34</time>
+                            </div>
+                        </div>
+                        <div class="products__item">
+                            <a class="products__item-img" href="product__one.html"></a>
+                            <div class="products__info-box">
+                                <a class="products__info-title" href="product__one.html">Заголовок объявления</a>
+                                <div class="products__info-price">Цена: 1000 руб</div>
+                                <time datetime="2020-08-07T22:34">7 августа 22:34</time>
+                            </div>
+                        </div>
+                        <div class="products__item">
+                            <a class="products__item-img" href="product__one.html"></a>
+                            <div class="products__info-box">
+                                <a class="products__info-title" href="product__one.html">Заголовок объявления</a>
+                                <div class="products__info-price">Цена: 1000 руб</div>
+                                <time datetime="2020-08-07T22:34">7 августа 22:34</time>
+                            </div>
+                        </div>
+                        <div class="products__item">
+                            <a class="products__item-img" href="product__one.html"></a>
+                            <div class="products__info-box">
+                                <a class="products__info-title" href="product__one.html">Заголовок объявления</a>
+                                <div class="products__info-price">Цена: 1000 руб</div>
+                                <time datetime="2020-08-07T22:34">7 августа 22:34</time>
+                            </div>
+                        </div>
+                        <div class="products__item">
+                            <a class="products__item-img" href="product__one.html"></a>
+                            <div class="products__info-box">
+                                <a class="products__info-title" href="product__one.html">Заголовок объявления</a>
+                                <div class="products__info-price">Цена: 1000 руб</div>
+                                <time datetime="2020-08-07T22:34">7 августа 22:34</time>
+                            </div>
+                        </div>
+                        <div class="products__item">
+                            <a class="products__item-img" href="product__one.html"></a>
+                            <div class="products__info-box">
+                                <a class="products__info-title" href="product__one.html">Заголовок объявления</a>
+                                <div class="products__info-price">Цена: 1000 руб</div>
+                                <time datetime="2020-08-07T22:34">7 августа 22:34</time>
+                            </div>
+                        </div>
+                        <div class="products__item">
+                            <a class="products__item-img" href="product__one.html"></a>
+                            <div class="products__info-box">
+                                <a class="products__info-title" href="product__one.html">Заголовок объявления</a>
+                                <div class="products__info-price">Цена: 1000 руб</div>
+                                <time datetime="2020-08-07T22:34">7 августа 22:34</time>
+                            </div>
+                        </div>
+                        <div class="products__item">
+                            <a class="products__item-img" href="product__one.html"></a>
+                            <div class="products__info-box">
+                                <a class="products__info-title" href="product__one.html">Заголовок объявления</a>
+                                <div class="products__info-price">Цена: 1000 руб</div>
+                                <time datetime="2020-08-07T22:34">7 августа 22:34</time>
+                            </div>
+                        </div>
+                        <div class="products__item">
+                            <a class="products__item-img" href="product__one.html"></a>
+                            <div class="products__info-box">
+                                <a class="products__info-title" href="product__one.html">Заголовок объявления</a>
+                                <div class="products__info-price">Цена: 1000 руб</div>
+                                <time datetime="2020-08-07T22:34">7 августа 22:34</time>
+                            </div>
+                        </div>
+                        <div class="products__item">
+                            <a class="products__item-img" href="product__one.html"></a>
+                            <div class="products__info-box">
+                                <a class="products__info-title" href="product__one.html">Заголовок объявления</a>
+                                <div class="products__info-price">Цена: 1000 руб</div>
+                                <time datetime="2020-08-07T22:34">7 августа 22:34</time>
+                            </div>
+                        </div>
+                        <div class="products__item">
+                            <a class="products__item-img" href="product__one.html"></a>
+                            <div class="products__info-box">
+                                <a class="products__info-title" href="product__one.html">Заголовок объявления</a>
+                                <div class="products__info-price">Цена: 1000 руб</div>
+                                <time datetime="2020-08-07T22:34">7 августа 22:34</time>
+                            </div>
+                        </div>
+                        <div class="products__item">
+                            <a class="products__item-img" href="product__one.html"></a>
+                            <div class="products__info-box">
+                                <a class="products__info-title" href="product__one.html">Заголовок объявления</a>
+                                <div class="products__info-price">Цена: 1000 руб</div>
+                                <time datetime="2020-08-07T22:34">7 августа 22:34</time>
+                            </div>
+                        </div>
+                        <div class="products__item">
+                            <a class="products__item-img" href="product__one.html"></a>
+                            <div class="products__info-box">
+                                <a class="products__info-title" href="product__one.html">Заголовок объявления</a>
+                                <div class="products__info-price">Цена: 1000 руб</div>
+                                <time datetime="2020-08-07T22:34">7 августа 22:34</time>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pagination">
+                        <ul class="pagination__list">
+                            <li><a class="left__pagination" href="#">0</a></li>
+                            <li><a class="active" href="#">1</a></li>
+                            <li><a href="#">2</a></li>
+                            <li><a href="#">3</a></li>
+                            <li><a href="#">4</a></li>
+                            <li><a href="#">5</a></li>
+                            <li><a href="#">6</a></li>
+                            <li><a href="#">7</a></li>
+                            <li><a href="#">8</a></li>
+                            <li><a href="#">9</a></li>
+                            <li><a class="right__pagination" href="#">0</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <footer class="footer">
+            <div class="container">
+                <p class="footer__text">
+                    2020 Test work by Anna Salkova
+                </p>
+            </div>
+
+        </footer>
+    </div>
+
+    <div id="modal">
+        <div class="login__wrapper">
+            <div class="login__title">
+                Авторизация
+            </div>
+            <form class="form" id="myForm" role="form">
+                <label class="login__label-mail" for="inputEmail">
+                    <h4>E-mail</h4>
+                    <input class="form-control" type="email" name="email" id="inputEmail" placeholder="Введите E-mail" required>
+                </label>
+                <label class="login__label-password">
+                    <h4>Пароль</h4>
+                    <input  class="form-control" type="password" name="password" id="inputPassword" placeholder="Введите пароль" required>
+                </label>
+                <button class="btn btn-default" type="submit">Войти</button>
+            </form>
+        </div>
+    </div>
+
+    <div id="modal__reg">
+        <div class="login__wrapper">
+            <div class="login__title">
+                Регистрация
+            </div>
+            <form class="form" id="myFormReg" role="form">
+                <label class="login__label-mail" for="inputEmail">
+                    <h4>E-mail</h4>
+                    <input class="form-control" type="email" name="email" id="inputEmail" placeholder="Введите E-mail" required>
+                </label>
+                <label class="login__label-password">
+                    <h4>Пароль</h4>
+                    <input  class="form-control" type="password" name="password" id="inputPassword" placeholder="Введите пароль" required>
+                </label>
+                <button class="btn btn-default" type="submit">Войти</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="js/libs.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

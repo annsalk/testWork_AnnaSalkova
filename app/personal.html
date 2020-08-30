@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test work by Ann Salkova</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/libs.min.css">
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="content">
+            <header class="header">
+                <div class="container">
+                    <div class="header__inner">
+                        <div class="header__logo">
+                            <a href="index.html" class="header__logo-link">
+                                LOGO
+                            </a>
+                        </div>
+                        <div class="header__box">
+                            <a class="header__btn header__btn-login  header_btn-login--off" data-fancybox data-src="#modal"
+                                href="javascript:;">Войти</a>
+                            <a class="header__btn header__btn-register header_btn-login--off" data-fancybox data-src="#modal__reg"
+                                href="javascript:;">Зарегистрироваться</a>
+                            <a class="header__btn header__btn-add" href="add.html">Добавить объявление</a>
+                            <a class="header__btn-link header__btn-my__announcements" href="announcements.html">Мои объявления</a>
+                            <a class="header__btn-link header__btn-personal_area" href="personal.html">Личный кабинет</a>
+                            <a class="header__btn header__btn-logout" href="#">Выйти</a>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <div class="breadcrumbs">
+                <div class="container">
+                    <div class="breadcrumbs__inner">
+                        <ul class="breadcrumbs__list">
+                            <li><a href="index.html">Главная</a></li>
+                            <li><a href="#">Личный кабинет</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <section class="personal__info">
+                <div class="container">
+                    <div class="personal__info-inner">
+                        <div class="personal__info-img">
+                            <img src="images/avatar.png" alt="">
+                            <div class="box">
+                                <form name="form-id">       
+                                <input type="file" name="file-2[]" id="file-2" class="inputfile inputfile-2"
+                                        data-multiple-caption="{count} files selected" multiple accept="image/jpeg, image/jpg, image/png"/>
+                                <label for="file-2">
+                                    <span>Загрузить фото&hellip;</span></label></form> 
+                            </div>
+                        </div>
+                        <div class="personal__info-form">
+                            <form class="form" id="myFormPers" role="form">
+                                    
+                                    <label for="inputName">Имя
+                                        <input class="form-control" type="text" name="name" id="inputName" required>
+                                    </label>
+                                    <label for="inputCity">Город
+                                        <select  name="city" id="selectCity" required>
+                                            <option> </option>
+                                            <option>Мокондо</option>
+                                            <option>Москва</option>
+                                            <option>Санкт-Петербург</option>
+                                            <option>Новосибирск</option>
+                                            <option>Екатеринбург</option>
+                                            <option>Омск</option>
+                                            <option>Томск</option>
+                                            <option>Красноярск</option>
+                                            <option>Хабаровск</option>
+                                        </select>
+                                    </label>
+                                    
+                                    <label for="inputPhone">Телефон
+                                           +7 <input class="form-control" type="tel" name="phone" id="inputPhone" size="10" pattern="[0-9]{10}" required>
+                                    </label>
+                                    <label>
+                                        О себе
+                                        <textarea cols="25" rows="5"></textarea>
+                                    </label>
+                                    <button class="btn btn-default" type="submit">Сохранить</button>
+                                </form>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+        <footer class="footer">
+            <div class="container">
+                <p class="footer__text">
+                    2020 Test work by Anna Salkova
+                </p>
+            </div>
+
+        </footer>
+    </div>
+
+    <div id="modal">
+        <div class="login__wrapper">
+            <div class="login__title">
+                Авторизация
+            </div>
+            <form class="form" id="myForm" role="form">
+                <label class="login__label-mail" for="inputEmail">
+                    <h4>E-mail</h4>
+                    <input class="form-control" type="email" name="email" id="inputEmail" placeholder="Введите E-mail" required>
+                </label>
+                <label class="login__label-password">
+                    <h4>Пароль</h4>
+                    <input  class="form-control" type="password" name="password" id="inputPassword" placeholder="Введите пароль" required>
+                </label>
+                <button class="btn btn-default" type="submit">Войти</button>
+            </form>
+        </div>
+    </div>
+
+    <div id="modal__reg">
+        <div class="login__wrapper">
+            <div class="login__title">
+                Регистрация
+            </div>
+            <form class="form" id="myFormReg" role="form">
+                <label class="login__label-mail" for="inputEmail">
+                    <h4>E-mail</h4>
+                    <input class="form-control" type="email" name="email" id="inputEmail" placeholder="Введите E-mail" required>
+                </label>
+                <label class="login__label-password">
+                    <h4>Пароль</h4>
+                    <input  class="form-control" type="password" name="password" id="inputPassword" placeholder="Введите пароль" required>
+                </label>
+                <button class="btn btn-default" type="submit">Войти</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="js/libs.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

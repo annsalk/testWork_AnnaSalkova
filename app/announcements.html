@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test work by Ann Salkova</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/libs.min.css">
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="content">
+            <header class="header">
+                <div class="container">
+                    <div class="header__inner">
+                        <div class="header__logo">
+                            <a href="index.html" class="header__logo-link">
+                                LOGO
+                            </a>
+                        </div>
+                        <div class="header__box">
+                            <a class="header__btn header__btn-login  header_btn-login--off" data-fancybox
+                                data-src="#modal" href="javascript:;">Войти</a>
+                            <a class="header__btn header__btn-register header_btn-login--off" data-fancybox
+                                data-src="#modal__reg" href="javascript:;">Зарегистрироваться</a>
+                            <a class="header__btn header__btn-add" href="add.html">Добавить объявление</a>
+                            <a class="header__btn-link header__btn-my__announcements" href="announcements.html">Мои
+                                объявления</a>
+                            <a class="header__btn-link header__btn-personal_area" href="personal.html">Личный
+                                кабинет</a>
+                            <a class="header__btn header__btn-logout" href="#">Выйти</a>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <section class="announcements">
+                <div class="container">
+                    <h2 class="title announcements__title1">Мои объявления</h2>
+                    <div class="search__product">
+                        <div class="search__product-inner">
+                            <form>
+                                <label>
+                                    <select>
+                                        <option selected>Категория</option>
+                                        <option>Недвижимость</option>
+                                        <option>Транспорт</option>
+                                        <option>Личные вещи</option>
+                                        <option>Хобби и отдых</option>
+                                        <option>Услуги</option>
+                                        <option>Бытовая техника</option>
+                                    </select>
+                                    <select>
+                                        <option selected>Город</option>
+                                        <option>Москва</option>
+                                        <option>Санкт-Петербург</option>
+                                        <option>Новосибирск</option>
+                                        <option>Екатеринбург</option>
+                                        <option>Омск</option>
+                                        <option>Томск</option>
+                                        <option>Красноярск</option>
+                                        <option>Хабаровск</option>
+                                    </select>
+                                    <input type="text" placeholder="Поиск по объявлениям" required>
+                                    <button type="submit">
+                                        Поиск
+                                    </button>
+                                </label>
+                            </form>
+                        </div>
+                        <div class="show__items">
+                            <div class="show__items-text">Показать по:</div>
+                            <select>
+                                <option>20</option>
+                                <option>40</option>
+                                <option>120</option>
+                            </select>
+                        </div>
+                    </div>
+                    
+                    <div class="announcements__inner">
+                        <div class="announcements__item announcements__item-active">
+                            <div class="announcements__item-box">
+                                <div class="announcements__item-info1">
+                                    <h3 class="announcements__title">
+                                        Заголовок объявления о продаже
+                                    </h3>
+                                    <a class="announcements__btn-change" data-fancybox data-src="#modal__change"
+                                        href="javascript:;"></a>
+                                    <button class="announcements__btn-close" type="button" data-close>Закрыть</button>
+                                </div>
+                                <div class="announcements__item-info2">
+                                    <time datetime="2020-08-07T22:34">7 августа 22:34</time>
+                                    <div class="announcements__item-line"> <span>Категория:</span> Недвижимость</div>
+                                    <div class="announcements__item-line"> <span>Город:</span> Томск</div>
+                                </div>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus assumenda
+                                    accusamus libero commodi quis rerum! Consequuntur sapiente distinctio maxime
+                                    facilis voluptate! Fuga voluptatem nesciunt quod vero excepturi eos
+                                    voluptate! Sapiente!
+                                </p>
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima expedita
+                                    reprehenderit
+                                    ut ullam numquam architecto! Quibusdam, dicta minima harum ducimus voluptatem
+                                    animi
+                                    vitae aliquid, ad dolores, corporis alias. Exercitationem, consequuntur?
+                                    Molestiae eveniet magnam, reprehenderit fugiat illum in tenetur id sit omnis
+                                    placeat.
+                                </p>
+                            </div>
+                            <div class="announcements__item-box__img">
+                                <div class="announcements__item-line announcements__status-active"> <span>Статус:</span> Активное</div>
+                                <div class="announcements__item-line announcements__status-close"> <span>Статус:</span> Закрытое</div>
+                                <div class="announcements__item-line"> <span>Цена:</span> 10 000 руб</div>
+                                <a class="announcements__item-img" data-fancybox data-src="#modal__gallery"
+                                    href="javascript:;">
+                                    <img src="images/item.jpg" alt="">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="announcements__item announcements__item-active">
+                            <div class="announcements__item-box">
+                                <div class="announcements__item-info1">
+                                    <h3 class="announcements__title">
+                                        Заголовок объявления о продаже
+                                    </h3>
+                                    <a class="announcements__btn-change" data-fancybox data-src="#modal__change"
+                                        href="javascript:;"></a>
+                                    <button class="announcements__btn-close" type="button" data-close>Закрыть</button>
+                                </div>
+                                <div class="announcements__item-info2">
+                                    <time datetime="2020-08-07T22:34">7 августа 22:34</time>
+                                    <div class="announcements__item-line"> <span>Категория:</span> Недвижимость</div>
+                                    <div class="announcements__item-line"> <span>Город:</span> Томск</div>
+                                </div>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus assumenda
+                                    accusamus libero commodi quis rerum! Consequuntur sapiente distinctio maxime
+                                    facilis voluptate! Fuga voluptatem nesciunt quod vero excepturi eos
+                                    voluptate! Sapiente!
+                                </p>
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima expedita
+                                    reprehenderit
+                                    ut ullam numquam architecto! Quibusdam, dicta minima harum ducimus voluptatem
+                                    animi
+                                    vitae aliquid, ad dolores, corporis alias. Exercitationem, consequuntur?
+                                    Molestiae eveniet magnam, reprehenderit fugiat illum in tenetur id sit omnis
+                                    placeat.
+                                </p>
+                            </div>
+                            <div class="announcements__item-box__img">
+                                <div class="announcements__item-line announcements__status-active"> <span>Статус:</span> Активное</div>
+                                <div class="announcements__item-line announcements__status-close"> <span>Статус:</span> Закрытое</div>
+                                <div class="announcements__item-line"> <span>Цена:</span> 10 000 руб</div>
+                                <a class="announcements__item-img" data-fancybox data-src="#modal__gallery"
+                                    href="javascript:;">
+                                    <img src="images/item.jpg" alt="">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="announcements__item announcements__item-active">
+                            <div class="announcements__item-box">
+                                <div class="announcements__item-info1">
+                                    <h3 class="announcements__title">
+                                        Заголовок объявления о продаже
+                                    </h3>
+                                    <a class="announcements__btn-change" data-fancybox data-src="#modal__change"
+                                        href="javascript:;"></a>
+                                    <button class="announcements__btn-close" type="button" data-close>Закрыть</button>
+                                </div>
+                                <div class="announcements__item-info2">
+                                    <time datetime="2020-08-07T22:34">7 августа 22:34</time>
+                                    <div class="announcements__item-line"> <span>Категория:</span> Недвижимость</div>
+                                    <div class="announcements__item-line"> <span>Город:</span> Томск</div>
+                                </div>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus assumenda
+                                    accusamus libero commodi quis rerum! Consequuntur sapiente distinctio maxime
+                                    facilis voluptate! Fuga voluptatem nesciunt quod vero excepturi eos
+                                    voluptate! Sapiente!
+                                </p>
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima expedita
+                                    reprehenderit
+                                    ut ullam numquam architecto! Quibusdam, dicta minima harum ducimus voluptatem
+                                    animi
+                                    vitae aliquid, ad dolores, corporis alias. Exercitationem, consequuntur?
+                                    Molestiae eveniet magnam, reprehenderit fugiat illum in tenetur id sit omnis
+                                    placeat.
+                                </p>
+                            </div>
+                            <div class="announcements__item-box__img">
+                                <div class="announcements__item-line announcements__status-active"> <span>Статус:</span> Активное</div>
+                                <div class="announcements__item-line announcements__status-close"> <span>Статус:</span> Закрытое</div>
+                                <div class="announcements__item-line"> <span>Цена:</span> 10 000 руб</div>
+                                <a class="announcements__item-img" data-fancybox data-src="#modal__gallery"
+                                    href="javascript:;">
+                                    <img src="images/item.jpg" alt="">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="announcements__item announcements__item-active">
+                            <div class="announcements__item-box">
+                                <div class="announcements__item-info1">
+                                    <h3 class="announcements__title">
+                                        Заголовок объявления о продаже
+                                    </h3>
+                                    <a class="announcements__btn-change" data-fancybox data-src="#modal__change"
+                                        href="javascript:;"></a>
+                                    <button class="announcements__btn-close" type="button" data-close>Закрыть</button>
+                                </div>
+                                <div class="announcements__item-info2">
+                                    <time datetime="2020-08-07T22:34">7 августа 22:34</time>
+                                    <div class="announcements__item-line"> <span>Категория:</span> Недвижимость</div>
+                                    <div class="announcements__item-line"> <span>Город:</span> Томск</div>
+                                </div>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus assumenda
+                                    accusamus libero commodi quis rerum! Consequuntur sapiente distinctio maxime
+                                    facilis voluptate! Fuga voluptatem nesciunt quod vero excepturi eos
+                                    voluptate! Sapiente!
+                                </p>
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima expedita
+                                    reprehenderit
+                                    ut ullam numquam architecto! Quibusdam, dicta minima harum ducimus voluptatem
+                                    animi
+                                    vitae aliquid, ad dolores, corporis alias. Exercitationem, consequuntur?
+                                    Molestiae eveniet magnam, reprehenderit fugiat illum in tenetur id sit omnis
+                                    placeat.
+                                </p>
+                            </div>
+                            <div class="announcements__item-box__img">
+                                <div class="announcements__item-line announcements__status-active"> <span>Статус:</span> Активное</div>
+                                <div class="announcements__item-line announcements__status-close"> <span>Статус:</span> Закрытое</div>
+                                <div class="announcements__item-line"> <span>Цена:</span> 10 000 руб</div>
+                                <a class="announcements__item-img" data-fancybox data-src="#modal__gallery"
+                                    href="javascript:;">
+                                    <img src="images/item.jpg" alt="">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="announcements__item announcements__item-close">
+                            <div class="announcements__item-box">
+                                <div class="announcements__item-info1">
+                                    <h3 class="announcements__title">
+                                        Заголовок объявления о продаже
+                                    </h3>
+                                    <a class="announcements__btn-change" data-fancybox data-src="#modal__change"
+                                        href="javascript:;"></a>
+                                    <button class="announcements__btn-close" type="button" data-close>Закрыть</button>
+                                </div>
+                                <div class="announcements__item-info2">
+                                    <time datetime="2020-08-07T22:34">7 августа 22:34</time>
+                                    <div class="announcements__item-line"> <span>Категория:</span> Недвижимость</div>
+                                    <div class="announcements__item-line"> <span>Город:</span> Томск</div>
+                                </div>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus assumenda
+                                    accusamus libero commodi quis rerum! Consequuntur sapiente distinctio maxime
+                                    facilis voluptate! Fuga voluptatem nesciunt quod vero excepturi eos
+                                    voluptate! Sapiente!
+                                </p>
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima expedita
+                                    reprehenderit
+                                    ut ullam numquam architecto! Quibusdam, dicta minima harum ducimus voluptatem
+                                    animi
+                                    vitae aliquid, ad dolores, corporis alias. Exercitationem, consequuntur?
+                                    Molestiae eveniet magnam, reprehenderit fugiat illum in tenetur id sit omnis
+                                    placeat.
+                                </p>
+                            </div>
+                            <div class="announcements__item-box__img">
+                                <div class="announcements__item-line announcements__status-active"> <span>Статус:</span> Активное</div>
+                                <div class="announcements__item-line announcements__status-close"> <span>Статус:</span> Закрытое</div>
+                                <div class="announcements__item-line"> <span>Цена:</span> 10 000 руб</div>
+                                <a class="announcements__item-img" data-fancybox data-src="#modal__gallery"
+                                    href="javascript:;">
+                                    <img src="images/item.jpg" alt="">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="announcements__item announcements__item-close">
+                            <div class="announcements__item-box">
+                                <div class="announcements__item-info1">
+                                    <h3 class="announcements__title">
+                                        Заголовок объявления о продаже
+                                    </h3>
+                                    <a class="announcements__btn-change" data-fancybox data-src="#modal__change"
+                                        href="javascript:;"></a>
+                                    <button class="announcements__btn-close" type="button" data-close>Закрыть</button>
+                                </div>
+                                <div class="announcements__item-info2">
+                                    <time datetime="2020-08-07T22:34">7 августа 22:34</time>
+                                    <div class="announcements__item-line"> <span>Категория:</span> Недвижимость</div>
+                                    <div class="announcements__item-line"> <span>Город:</span> Томск</div>
+                                </div>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus assumenda
+                                    accusamus libero commodi quis rerum! Consequuntur sapiente distinctio maxime
+                                    facilis voluptate! Fuga voluptatem nesciunt quod vero excepturi eos
+                                    voluptate! Sapiente!
+                                </p>
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima expedita
+                                    reprehenderit
+                                    ut ullam numquam architecto! Quibusdam, dicta minima harum ducimus voluptatem
+                                    animi
+                                    vitae aliquid, ad dolores, corporis alias. Exercitationem, consequuntur?
+                                    Molestiae eveniet magnam, reprehenderit fugiat illum in tenetur id sit omnis
+                                    placeat.
+                                </p>
+                            </div>
+                            <div class="announcements__item-box__img">
+                                <div class="announcements__item-line announcements__status-active"> <span>Статус:</span> Активное</div>
+                                <div class="announcements__item-line announcements__status-close"> <span>Статус:</span> Закрытое</div>
+                                <div class="announcements__item-line"> <span>Цена:</span> 10 000 руб</div>
+                                <a class="announcements__item-img" data-fancybox data-src="#modal__gallery"
+                                    href="javascript:;">
+                                    <img src="images/item.jpg" alt="">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="announcements__item announcements__item-close">
+                            <div class="announcements__item-box">
+                                <div class="announcements__item-info1">
+                                    <h3 class="announcements__title">
+                                        Заголовок объявления о продаже
+                                    </h3>
+                                    <a class="announcements__btn-change" data-fancybox data-src="#modal__change"
+                                        href="javascript:;"></a>
+                                    <button class="announcements__btn-close" type="button" data-close>Закрыть</button>
+                                </div>
+                                <div class="announcements__item-info2">
+                                    <time datetime="2020-08-07T22:34">7 августа 22:34</time>
+                                    <div class="announcements__item-line"> <span>Категория:</span> Недвижимость</div>
+                                    <div class="announcements__item-line"> <span>Город:</span> Томск</div>
+                                </div>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus assumenda
+                                    accusamus libero commodi quis rerum! Consequuntur sapiente distinctio maxime
+                                    facilis voluptate! Fuga voluptatem nesciunt quod vero excepturi eos
+                                    voluptate! Sapiente!
+                                </p>
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima expedita
+                                    reprehenderit
+                                    ut ullam numquam architecto! Quibusdam, dicta minima harum ducimus voluptatem
+                                    animi
+                                    vitae aliquid, ad dolores, corporis alias. Exercitationem, consequuntur?
+                                    Molestiae eveniet magnam, reprehenderit fugiat illum in tenetur id sit omnis
+                                    placeat.
+                                </p>
+                            </div>
+                            <div class="announcements__item-box__img">
+                                <div class="announcements__item-line announcements__status-active"> <span>Статус:</span> Активное</div>
+                                <div class="announcements__item-line announcements__status-close"> <span>Статус:</span> Закрытое</div>
+                                <div class="announcements__item-line"> <span>Цена:</span> 10 000 руб</div>
+                                <a class="announcements__item-img" data-fancybox data-src="#modal__gallery"
+                                    href="javascript:;">
+                                    <img src="images/item.jpg" alt="">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="announcements__item announcements__item-close">
+                            <div class="announcements__item-box">
+                                <div class="announcements__item-info1">
+                                    <h3 class="announcements__title">
+                                        Заголовок объявления о продаже
+                                    </h3>
+                                    <a class="announcements__btn-change" data-fancybox data-src="#modal__change"
+                                        href="javascript:;"></a>
+                                    <button class="announcements__btn-close" type="button" data-close>Закрыть</button>
+                                </div>
+                                <div class="announcements__item-info2">
+                                    <time datetime="2020-08-07T22:34">7 августа 22:34</time>
+                                    <div class="announcements__item-line"> <span>Категория:</span> Недвижимость</div>
+                                    <div class="announcements__item-line"> <span>Город:</span> Томск</div>
+                                </div>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus assumenda
+                                    accusamus libero commodi quis rerum! Consequuntur sapiente distinctio maxime
+                                    facilis voluptate! Fuga voluptatem nesciunt quod vero excepturi eos
+                                    voluptate! Sapiente!
+                                </p>
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima expedita
+                                    reprehenderit
+                                    ut ullam numquam architecto! Quibusdam, dicta minima harum ducimus voluptatem
+                                    animi
+                                    vitae aliquid, ad dolores, corporis alias. Exercitationem, consequuntur?
+                                    Molestiae eveniet magnam, reprehenderit fugiat illum in tenetur id sit omnis
+                                    placeat.
+                                </p>
+                            </div>
+                            <div class="announcements__item-box__img">
+                                <div class="announcements__item-line announcements__status-active"> <span>Статус:</span> Активное</div>
+                                <div class="announcements__item-line announcements__status-close"> <span>Статус:</span> Закрытое</div>
+                                <div class="announcements__item-line"> <span>Цена:</span> 10 000 руб</div>
+                                <a class="announcements__item-img" data-fancybox data-src="#modal__gallery"
+                                    href="javascript:;">
+                                    <img src="images/item.jpg" alt="">
+                                </a>
+                            </div>
+                        </div>
+                        
+                        <div class="pagination">
+                            <ul class="pagination__list">
+                                <li><a class="left__pagination" href="#">0</a></li>
+                                <li><a class="active" href="#">1</a></li>
+                                <li><a href="#">2</a></li>
+                                <li><a href="#">3</a></li>
+                                <li><a href="#">4</a></li>
+                                <li><a href="#">5</a></li>
+                                <li><a href="#">6</a></li>
+                                <li><a href="#">7</a></li>
+                                <li><a href="#">8</a></li>
+                                <li><a href="#">9</a></li>
+                                <li><a class="right__pagination" href="#">0</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+        <footer class="footer">
+            <div class="container">
+                <p class="footer__text">
+                    2020 Test work by Anna Salkova
+                </p>
+            </div>
+
+        </footer>
+    </div>
+
+    <div id="modal">
+        <div class="login__wrapper">
+            <div class="login__title">
+                Авторизация
+            </div>
+            <form class="form" id="myForm" role="form">
+                <label class="login__label-mail" for="inputEmail">
+                    <h4>E-mail</h4>
+                    <input class="form-control" type="email" name="email" id="inputEmail" placeholder="Введите E-mail" required>
+                </label>
+                <label class="login__label-password">
+                    <h4>Пароль</h4>
+                    <input  class="form-control" type="password" name="password" id="inputPassword" placeholder="Введите пароль" required>
+                </label>
+                <button class="btn btn-default" type="submit">Войти</button>
+            </form>
+        </div>
+    </div>
+
+    <div id="modal__reg">
+        <div class="login__wrapper">
+            <div class="login__title">
+                Регистрация
+            </div>
+            <form class="form" id="myFormReg" role="form">
+                <label class="login__label-mail" for="inputEmail">
+                    <h4>E-mail</h4>
+                    <input class="form-control" type="email" name="email" id="inputEmail" placeholder="Введите E-mail" required>
+                </label>
+                <label class="login__label-password">
+                    <h4>Пароль</h4>
+                    <input  class="form-control" type="password" name="password" id="inputPassword" placeholder="Введите пароль" required>
+                </label>
+                <button class="btn btn-default" type="submit">Войти</button>
+            </form>
+        </div>
+    </div>
+
+    <div id="modal__gallery">
+        <div class="gallery__wrapper">
+
+            <div data-slider="modal__slider">
+                <div class="slide">
+                    <div class="modal__slider-name">Фотография 1</div>
+                    <img class="modal-work__images-photo" src="images/item.jpg" alt="">
+                </div>
+                <div class="slide">
+                    <div class="modal__slider-name">Фотография 2</div>
+                    <img class="modal-work__images-photo" src="images/item1.jpg" alt="">
+                </div>
+                <div class="slide">
+                    <div class="modal__slider-name">Фотография 3</div>
+                    <img class="modal-work__images-photo" src="images/item2.jpg" alt="">
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div id="modal__change">
+        <div class="change__wrapper">
+            <div class="change__wrapper-title">
+                Изменить объявление
+            </div>
+            <div class="change__wrapper-form">
+                <form class="form" id="myChange" role="form">
+                    <label for="inputHeading">
+                        Заголовок
+                        <input type="text" name="heading" id="inputHeading" placeholder="" required>
+                    </label>
+                    <label for="selectCategory">
+                        Категория
+                        <select name="category" id="selectCategory" required>
+                            <option> </option>
+                            <option>Недвижимость</option>
+                            <option>Транспорт</option>
+                            <option>Личные вещи</option>
+                            <option>Хобби и отдых</option>
+                            <option>Услуги</option>
+                            <option>Бытовая техника</option>
+                        </select>
+                    </label>
+                    <label for="selectAbout">
+                        Описание
+                        <textarea name="about" id="selectAbout" cols="30" rows="10">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde ratione labore soluta facilis reiciendis cum cupiditate molestiae? Iure fugit necessitatibus architecto blanditiis sit est autem, consequuntur eos? Nostrum, inventore possimus.
+                        </textarea>
+                    </label>
+                    <label for="inputCity">Город
+                        <select  name="city" id="selectCity" required>
+                            <option> </option>
+                            <option>Мокондо</option>
+                            <option>Москва</option>
+                            <option>Санкт-Петербург</option>
+                            <option>Новосибирск</option>
+                            <option>Екатеринбург</option>
+                            <option>Омск</option>
+                            <option>Томск</option>
+                            <option>Красноярск</option>
+                            <option>Хабаровск</option>
+                        </select>
+                    </label>
+                    
+                    <label for="inputPrice">
+                        Цена <br>
+                        <input name="price" id="inputPrice" class="input__price add__input-price" type="number" min=0 step=1 pattern="[0-9]{10}">руб.
+                    </label>
+
+                    <div class="box">
+                        <div class="box__name">Фотография</div>
+                       
+                        <input type="file" name="file-1[]" id="file-1" class="inputfile inputfile-1"
+                            data-multiple-caption="{count} files selected" multiple />
+                    
+                    
+
+                            <label for="file-1">
+                            <span>Обзор&hellip;</span></label>
+               
+        
+
+                        <div class="box__info">Вы можете загрузить фотографию в формате jpeg, jpg, png.
+                            Весом не более 10Мб.</div>
+                    </div>
+
+                    <button class="add__change" type="submit">Добавить</button>
+                </form>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="js/libs.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
